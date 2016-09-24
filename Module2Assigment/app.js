@@ -26,7 +26,7 @@ function AlreadyBoughtShoppingController(ShoppingListCheckOffService) {
   var showList = this;
 
   showList.items = ShoppingListCheckOffService.getItems2();
-  
+
 }
 
 function ShoppingListCheckOffService() {
@@ -69,7 +69,7 @@ function ShoppingListCheckOffService() {
     else {
       itemsBought.push(itemsToBuy[itemIndex]);
       itemsToBuy.splice(itemIndex, 1);
-      throw new Error("Everything Bought");
+      throw new Error("Everything is Bought!");
     }
 
     service.getLength();
